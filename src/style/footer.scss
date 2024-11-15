@@ -21,5 +21,21 @@
 .iconTexte {
     display : flex ;
     justify-content : center;
-    gap : 10px;
+    gap : 5px;
+}
+
+.positionIconText{
+    display : flex;
+    align-items : center;
+    gap : 5px;
+}
+
+@media (max-width : 719px) and (min-width : 319px){
+
+    .iconTexte{
+        display : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items : center;
+    }
 }

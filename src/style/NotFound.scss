@@ -5,3 +5,15 @@
     text-align : center;
     color : rgba(255,96,96,1);
 }
+
+@media (max-width : 719px) and (min-width : 319px){
+  .err404{
+    font-size : 96px;
+  }
+}
+
+@media (max-width : 900px){
+    .err404 {
+        font-size : 170px;
+    }
+}

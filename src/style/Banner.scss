@@ -3,16 +3,39 @@
     height : 223px;
     margin : 20px auto;
     border-radius : 25px;
+    object-fit : cover;
 }
 
 .banner {
     margin : 20px 95px;
     max-width : 100%;
+    position : relative;
 }
 
-@media (max-width : 599px) and (min-width : 319px){
+.bannerTitle {
+    position : absolute;
+    color : white;
+    top : 50%;
+    left : 50%;
+    font-size : 30px;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width : 719px) and (min-width : 319px){
     .banner{
         margin : 20px;
+        img{
+            height : 80px;
+            width : 100%;
+        }
+    }
+
+    .bannerTitle{
+        font-size : 17px;
+    }
+
+    .aboutBanner img{
+        height : 223px;
     }
 
     

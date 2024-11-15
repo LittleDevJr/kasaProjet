@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-function Carousel({ images, currentIndex, setCurrentIndex }) {
-    
+function Carousel({ images}) {
+    const [ currentIndex, setCurrentIndex ]=useState(0);
 
     const handlePrevClick = () => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
@@ -22,6 +22,7 @@ function Carousel({ images, currentIndex, setCurrentIndex }) {
 
     return (
         <div className="carousel">
+          
             <FaChevronLeft className="carousel-arrow left" onClick={handlePrevClick} />
             <img src={images[currentIndex]} alt="carousel" />
             <FaChevronRight className="carousel-arrow right" onClick={handleNextClick} />

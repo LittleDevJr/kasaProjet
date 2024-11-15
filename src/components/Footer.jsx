@@ -8,8 +8,11 @@ function Footer() {
     <div className="piedPage">
         <img src={logo} alt="logo"></img>
         <div className="iconTexte">
+            <div className="positionIconText">
         <FontAwesomeIcon icon={ faCopyright } />
-        <p>Kasa. All rights reserved</p>
+        <p>Kasa. All</p>
+        </div>
+        <p>rights reserved</p>
         </div>
     </div>
     )

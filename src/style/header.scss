@@ -7,7 +7,7 @@
     align-items: center; 
     padding: 10px 0px; 
     margin : 20px 100px;
-    background-color: #f8f8f8; 
+    background-color: white; 
     img{
        max-width : 210px;
         height : 68px;
@@ -17,7 +17,7 @@
 .navEntete {
     ul {
         list-style: none;
-        margin: 0; 
+        margin-right: 15px; 
         display: flex;
         justify-content : flex-end;
         gap: 57px; 
@@ -45,7 +45,16 @@
     }
 }
 
-@media (max-width : 599px) and (min-width : 319px){
+@media (max-width : 900px){
+
+    .entete img{
+        width : 145px;
+        height : 46px;
+    }
+}
+
+
+@media (max-width : 719px) and (min-width : 319px){
     .entete{
         margin : 20px;
      img{
@@ -56,6 +65,10 @@
 
     .navEntete ul{
         gap : 20px;
+        margin-right : 10px;
     }
+
+    
 }
+
 

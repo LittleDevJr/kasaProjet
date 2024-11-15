@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Appartement from './pages/Appartement';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
-import Header from './pages/Header';
-import Footer from "./pages/Footer";
+import Header from './components/Header';
+import Footer from "./components/Footer";
 import './style/header.scss';
 import './style/footer.scss';
 import "./style/Banner.scss";
@@ -23,6 +24,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/appartement/:id" element={<Appartement />} />
         <Route path="/about" element={<About />} />
         <Route path="/not-found" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
