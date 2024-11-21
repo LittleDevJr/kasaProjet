@@ -18,10 +18,17 @@
         padding : 10px;
         color : white;
         height : 60px;
-        background-color : rgba(255,96,96,1);
         margin : 0;
         align-items : center;
-    }
+        background: linear-gradient(
+  to bottom,
+  #FF8080 0%,    /* Rouge clair doux */
+  #FF6666 10%,   /* Transition subtile vers une teinte légèrement plus foncée */
+  #FF4C4C 20.5%, /* Rouge soutenu */
+  #FF3333 35%,   /* Rouge encore plus profond */
+  #FF1A1A 50%    /* Rouge sombre */
+);
+}
 }
 
 .home-content .card-container {
@@ -31,6 +38,7 @@
     margin : 20px 100px; 
     background-color : #f6f6f6;
     padding : 50px 70px;
+    border-radius : 25px;
 }
 
 @media (max-width : 1024px) and (min-width : 720px){
@@ -55,5 +63,10 @@
 
     .card img{
         height : 255px;
+        border-radius : 10px 10px 0 0 ;
+        
     }
-}
+
+    .card p{
+        border-radius : 0 0 10px 10px;
+    } }

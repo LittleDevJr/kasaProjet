@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import apartmentsData from '../data/data.json'; 
+import apartmentsData from '../data/data.json';
 import { FaStar } from 'react-icons/fa';
 import Carousel from '../components/Carousel';
 import Collapse from '../components/Collapse';
@@ -12,7 +12,7 @@ const Appartement = () => {
 
     const apartment = apartmentsData.find((apt) => apt.id === id);
 
-    
+
     useEffect(() => {
         if (!apartment) {
             navigate('/not-found');
@@ -53,18 +53,18 @@ const Appartement = () => {
                 </div>
                 <div className="homeCollapse">
                     <div className="homeCollapseLeft">
-                    <Collapse headerClassName="collapse-home-header" contentClassName="collapse-home-content" title="Description">
-                        {apartment.description}
-                    </Collapse>
+                        <Collapse headerClassName="collapse-home-header" contentClassName="collapse-home-content" title="Description">
+                            {apartment.description}
+                        </Collapse>
                     </div>
                     <div className="homeCollapseRight">
-                    <Collapse headerClassName="collapse-home-header" contentClassName="collapse-home-content" title="Equipements">
-                        <ul> {apartment.equipments.map((equipment, index) => (
-                            <li key={index}>{equipment}</li>
-                        ))}
+                        <Collapse headerClassName="collapse-home-header" contentClassName="collapse-home-content" title="Equipements">
+                            <ul> {apartment.equipments.map((equipment, index) => (
+                                <li key={index}>{equipment}</li>
+                            ))}
 
-                        </ul>
-                    </Collapse>
+                            </ul>
+                        </Collapse>
                     </div>
                 </div>
             </div>

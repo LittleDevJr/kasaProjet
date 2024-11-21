@@ -3,8 +3,8 @@
         display : flex;
         align-items : center ; 
         justify-content : space-between;
-        margin : 20px 150px;
-        background-color : rgba(255,96,96,1);
+        margin : 20px 150px 0px 150px;
+        background-color : #FF6060;
         color : white;
         height : 52px;
         padding : 10px;
@@ -13,13 +13,15 @@
     }
 
     .collapseAboutContent{
-        margin : 20px 160px 35px 160px;
+        margin : 0px 150px 35px 150px;
+        background-color : #F6F6F6;
+        padding : 20px;
     }
 
     .homeCollapse{
         display : flex;
-        justify-content : start;
-        margin : 20px 0;
+        justify-content : space-between;
+        margin : 20px 100px 20px 80px ;
         
         
     }
@@ -28,24 +30,26 @@
         display : flex;
         flex-direction : row;
         align-items : center;
-        justify-content : space-between ;
-        margin : 20px 100px;
-        background-color : rgba(255,96,96,1);
+        justify-content : space-between;
+        background-color : #FF6060;
         color : white;
         cursor : pointer;
         height : 52px;
         border-radius : 5px;
         padding : 10px;
+        width : 100%;
     }
 
     .collapse-home-content{
-        margin : 20px 110px;
+        padding : 20px;
+        background-color : #F6F6F6;
         li{
             list-style: none;
     }}
 
     .homeCollapseLeft, .homeCollapseRight{
-        width : calc(100% - 100px);
+        width : 100%;
+        margin-left : 20px;
     }
 
     
@@ -53,11 +57,11 @@
 @media (max-width : 719px) and (min-width : 319px){
 
     .collapseAbout{
-        margin : 20px;
+        margin : 20px 20px 0 20px;
     }
 
     .collapseAboutContent{
-        margin : 20px 20px 30px 20px;
+        margin : 0px 20px 30px 20px;
     }
 
     .homeCollapse{
@@ -66,17 +70,19 @@
     }
 
     .collapse-home-header{
-        margin : 20px;
         width : 100%;
     }
 
     .collapse-home-content{
-        margin : 20px;
+        margin : 0px  20px 20px 10px;
+        padding : 20px;
     }
 
     .homeCollapseLeft, .homeCollapseRight{
         width : calc(100% - 40px);
 }
+
+
 }
 
 
